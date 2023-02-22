@@ -6,6 +6,9 @@ import Signup from './Signup';
 import Incorrect from './Incorrect';
 import Home1 from './Home1';
 import StudentDetails from './StudentDetails';
+import Advisor from './Advisor';
+import TeacherForm from './TeacherForm';
+import StudentForm from './StudentForm';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -32,6 +35,15 @@ function App() {
             </Route>
             <Route exact path='/student'>
               <StudentDetails/>
+            </Route>
+            <Route exact path='/advisor'>
+              <Advisor/>
+            </Route>
+            <Route exact path='/teacherform'>
+              <TeacherForm/>
+            </Route>
+            <Route exact path='/studentform'>
+              <StudentForm/>
             </Route>
             <Route path='*'>
               <NotFound/>

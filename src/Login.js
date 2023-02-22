@@ -48,7 +48,7 @@ const Login = () => {
                     <div class="dropdown-content">
                         <a href="/student">Student</a>
                         <a href="/teacher">Instructor</a>
-                        <a href="#">Advisor </a>
+                        <a href="/advisor">Advisor </a>
                     </div>
                 </div>
                 <h5>Username</h5>
