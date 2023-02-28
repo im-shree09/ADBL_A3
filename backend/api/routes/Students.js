@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', async (req, res, next)=>{
     try {
-        const student = await Student.findAll();
+        const [student, _] = await Student.findAll();
 
         res.status(200).json(student);
     } catch (error) {

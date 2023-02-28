@@ -1,6 +1,5 @@
 const db = require('../../config/db');
 
-
 class Student {
     constructor(ID, name, dept_name, tot_cred){
         this.ID = ID;
