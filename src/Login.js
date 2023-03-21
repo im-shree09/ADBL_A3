@@ -41,7 +41,7 @@ const Login = () => {
     }
     return ( 
         <div className="create">
-            <h2>Autobots Login Page </h2>
+            <h2>Login Page </h2>
             <form onSubmit={handleSubmit}>
                 <div class="dropdown">
                     <button class="dropbtn">Dropdown</button>

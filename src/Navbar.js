@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Navbar = () => {
-    const [name,setName]=useState('Autobots');
+    const [name,setName]=useState('Assignment3');
     const handleClick=()=>{
         setName('Afourathon')
     }

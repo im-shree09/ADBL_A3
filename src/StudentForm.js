@@ -4,9 +4,9 @@ import { useHistory } from "react-router-dom";
 const StudentForm = () => { 
         return ( 
             <div className="create">
-                <h2>Add a new team </h2>
+                <h2>Add a new Student </h2>
                 <form>
-                    <label>Team name:</label>
+                    <label>Student Id:</label>
                     <input 
                         type='text' 
                         required
@@ -14,44 +14,29 @@ const StudentForm = () => {
                         // onChange={(e)=>setTeamName(e.target.value)}
                     >
                     </input>
-                    <label>Team start date:</label>
+                    <label>Name of student:</label>
+                    <input 
+                        type='text' 
+                        required
+                        // value={team_name}
+                        // onChange={(e)=>setTeamName(e.target.value)}
+                    >
+                    </input>
+                    <label>Student contact no.:</label>
                     <input 
                         required
                         // value={team_start_date}
                         // onChange={(e)=> setTeam_start_date(e.target.value)}
                     >
                     </input>
-                    <label>Team end date:</label>
+                    <label>Student Depeartment:</label>
                     <input 
                         required
                         // value={team_end_date}
                         // onChange={(e)=> setTeam_end_date(e.target.value)}
                     >
                     </input>
-                    <label>Team Lead:</label>
-                    <input 
-                        type='text' 
-                        required
-                        // value={team_lead}
-                        // onChange={(e)=>setTeam_lead(e.target.value)}
-                    >
-                    </input>
-                    <label>Team Lead email:</label>
-                    <input 
-                        type='email' 
-                        required
-                        // value={team_lead_email}
-                        // onChange={(e)=>setTeam_lead_email(e.target.value)}
-                    >
-                    </input>
-                    <label>Project Name:</label>
-                    <input 
-                        type='text' 
-                        required
-                        // value={proj_name}
-                        // onChange={(e)=>setProj_name(e.target.value)}
-                    >
-                    </input>
+                    
                     {/* <label>Blog Author</label>
                     <select
                         value={author}

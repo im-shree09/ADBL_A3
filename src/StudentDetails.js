@@ -3,8 +3,8 @@ import useFetch from './useFetch';
 import { Link } from 'react-router-dom'
 
 const StudentDetails = () => {
-    // const { id } = useParams();
-    // const {data:proj, error, isLoading} = useFetch('http://localhost:8000/my_team_api/' + id);
+    const { id } = useParams();
+    const {data:proj} = useFetch('http://localhost:3000/students/' + id);
     // const history= useHistory()
     // const handleEdit=()=>{
     //     history.push(`/edit-team/${id}`);
@@ -20,15 +20,14 @@ const StudentDetails = () => {
     //         history.push('/home');
     //     })
     // }
+    console.log(proj.name)
     return (
         <div className="blog-details">
 
             <article>
-                <h2>Student Id: </h2>
-                <h2>Student Name: </h2>
-                <h5>Student Branch: </h5>
-                <h5>Email: </h5>
-                <h5>Start Date:</h5>
+                <h2>Student Id: {id}</h2>
+                <h2>Student Name: {proj.name}</h2>
+                <h5>Student Branch: {proj.dept_name}</h5>
                 {/* <button onClick={handleEdit}>Edit</button>
                     <button onClick={handleClick}>Delete</button>
                     <p></p>
@@ -40,8 +39,8 @@ const StudentDetails = () => {
                         <th>Total creds</th>
                     </tr>
                     <tr>
-                        <td>Shreeshail Mahajan</td>
-                        <td>CSE</td>
+                        <td>{proj.name}</td>
+                        <td>{proj.dept_name}</td>
                         <td>9.15</td>
                     </tr>
                 </table>
